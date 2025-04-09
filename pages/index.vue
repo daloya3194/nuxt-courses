@@ -13,12 +13,22 @@ const fetchComments = async () => {
     });
     console.log(comments.comments);
 }
+
+const { $errorMessage, $successMessage, $fooMessage, $baz, $hello } = useNuxtApp();
 </script>
 
 <template>
     <div>
         <button @click="fetchComments">Fetch Comments</button>
         <h1>Welcome Page</h1>
+
+        <br>
+        <p>{{ $errorMessage('Server error') }}</p>
+        <p>{{ $successMessage('Server success') }}</p>
+        <p>{{ $fooMessage('Server foo') }}</p>
+        <p>{{ $baz('Server baz') }}</p>
+        <p>{{ $hello }}</p>
+        <br>
 
         <h1>List of articles</h1>
 

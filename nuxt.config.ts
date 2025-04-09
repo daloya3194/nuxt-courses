@@ -16,5 +16,9 @@ export default defineNuxtConfig({
             API_URL: process.env.API_URL,
             API_BASE_URL: process.env.API_BASE_URL
         }
-    }
+    },
+    plugins: [
+        '~/plugins/foo/fooMessage',
+        '~/plugins/foo/baz/baz',
+    ]
 })
