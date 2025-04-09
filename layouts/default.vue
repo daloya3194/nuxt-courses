@@ -28,7 +28,7 @@
         </div>
 
         <div>
-            <slot></slot>
+            <NuxtPage></NuxtPage>
         </div>
 
         <br>

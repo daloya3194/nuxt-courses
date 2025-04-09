@@ -1,12 +1,11 @@
 <script setup lang="ts">
-
+defineProps(['message'])
 </script>
 
 <template>
-    <BlogAboutDetail :message="'About page Message Detail'" />
     <div>
         <h1>
-            About Page
+            {{ message }}
         </h1>
     </div>
 </template>

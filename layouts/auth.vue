@@ -8,7 +8,7 @@
             <NuxtLink to="/">Home</NuxtLink>
         </h1>
         <div>
-            <slot></slot>
+            <NuxtPage></NuxtPage>
         </div>
 
         <br>

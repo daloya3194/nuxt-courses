@@ -13,7 +13,7 @@
         <NuxtLink to="/admin/create-post">Move to Create Post Page</NuxtLink>
 
         <div>
-            <slot></slot>
+            <NuxtPage></NuxtPage>
         </div>
 
         <br>
