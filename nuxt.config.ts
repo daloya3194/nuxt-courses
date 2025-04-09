@@ -20,5 +20,14 @@ export default defineNuxtConfig({
     plugins: [
         '~/plugins/foo/fooMessage',
         '~/plugins/foo/baz/baz',
-    ]
+    ],
+    nitro: {
+        preset: 'node-server',
+        // serveStatic: true,
+        // rollupConfig: {
+        //     output: {
+        //         inlineDynamicImports: true
+        //     }
+        // }
+    },
 })
