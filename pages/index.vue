@@ -6,10 +6,18 @@ definePageMeta({
 const config = useRuntimeConfig();
 
 const { data } = await useFetch(config.public.API_URL + '/posts');
+
+const fetchComments = async () => {
+    const comments = await $fetch('/api/comments').catch((error) => {
+        console.log(error);
+    });
+    console.log(comments.comments);
+}
 </script>
 
 <template>
     <div>
+        <button @click="fetchComments">Fetch Comments</button>
         <h1>Welcome Page</h1>
 
         <h1>List of articles</h1>
