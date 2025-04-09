@@ -4,16 +4,25 @@
 
 <template>
     <div>
-        <div>
+        <div style="background-color: gainsboro;">
             <ul>
                 <li>
-                    <NuxtLink to="">Home</NuxtLink>
+                    <NuxtLink to="/">Home</NuxtLink>
                 </li>
                 <li>
                     <NuxtLink to="">Articles</NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="">Register</NuxtLink>
+                    <NuxtLink to="/blog/about">About</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="/blog/contact">Contact</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="/auth/login">Login</NuxtLink>
+                </li>
+                <li>
+                    <NuxtLink to="/auth/register">Register</NuxtLink>
                 </li>
             </ul>
         </div>
@@ -27,8 +36,8 @@
         <br>
         <br>
 
-        <div>
-            <h1>This is the footer</h1>
+        <div style="background-color: gainsboro;">
+            <h1>Footer</h1>
         </div>
     </div>
 </template>
